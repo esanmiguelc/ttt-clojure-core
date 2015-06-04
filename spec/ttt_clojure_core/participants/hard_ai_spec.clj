@@ -20,7 +20,7 @@
 
   (it "takes the middle"
     (should= 5 (get-move ["X"  2   3
-                          4   5   6
-                          7   8   9] "O" "X")))
+                           4   5   6
+                           7   8   9] "O" "X")))
   )
 

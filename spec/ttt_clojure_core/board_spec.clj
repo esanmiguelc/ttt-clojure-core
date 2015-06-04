@@ -1,4 +1,4 @@
-(ns ttt-clojure.board.board-spec
+(ns ttt-clojure-core.board-spec
   (:require [speclj.core :refer :all]
             [ttt-clojure-core.board :refer :all]))
 
