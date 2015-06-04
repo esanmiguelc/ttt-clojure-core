@@ -1,4 +1,4 @@
-(defproject org.esanmiguelc/ttt-clojure-core "1.0.0"
+(defproject org.esanmiguelc/ttt-clojure-core "1.0.1"
   :description "Tic Tac Toe core components"
   :url "http://example.com/FIXME"
   :main ttt-clojure-core.core
