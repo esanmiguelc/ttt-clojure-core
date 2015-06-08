@@ -20,9 +20,9 @@
   (combination-check (board/diagonals board) mark))
 
 (defn winner? [board mark]
-   (if (or (row-winner? board mark)
+   (or (row-winner? board mark)
         (column-winner? board mark)
-        (diagonal-winner? board mark)) true false))
+        (diagonal-winner? board mark)))
 
 (defn- board-even? [board]
   (even? (board/board-size board)))
@@ -45,8 +45,8 @@
   participant-two)
 
 (defn game-over? [board]
-  (or (winner? board "X") 
-      (winner? board "O") 
+  (or (winner? board first-participant) 
+      (winner? board second-participant) 
       (board/board-full? board)))
 
 (defn contains-mark? [element mark]

@@ -11,7 +11,7 @@
 
 (defn- minimax [board my-mark opponent depth]
   (let [available-moves (board/available-moves board)]
-    (if (or (rules/game-over? board) (> depth 9)) 
+    (if (or (rules/game-over? board) (> depth 5)) 
       (/ (score-board board my-mark opponent) depth)
       (if (rules/my-turn? board my-mark)
         (apply max (map #(minimax (board/make-move board % my-mark) 
