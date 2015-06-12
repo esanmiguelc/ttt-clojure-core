@@ -7,5 +7,5 @@ Core implementation for Tic Tac Toe in Clojure a working command-line version us
     
 ##To use this jar using leiningen
 
-        [org.esanmiguelc/ttt-clojure-core "1.0.1"]
+    [org.esanmiguelc/ttt-clojure-core "1.0.1"]
 
